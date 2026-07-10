@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">หน้าแรก</a></li>
+            <li><a href="about.html">ประวัติส่วนตัว</a></li>
+            <li><a href="education.html">ประวัติการศึกษา</a></li>
+            <li><a href="projects.html">ผลงาน/กิจกรรม</a></li>
+            <li><a href="contact.html">ช่องทางติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>สวัสดีครับ ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน</h1>
+            <p>ฉันกำลังศึกษาอยู่ชั้น ม.6 และนี่คือพื้นที่รวบรวมเรื่องราวและผลงานของฉัน</p>
+            <a href="projects.html" class="btn">ดูผลงานของฉัน</a>
+        </div>
+    </header>
+
+</body>
+</html>
