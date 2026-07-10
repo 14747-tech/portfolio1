@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติการศึกษา | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="about.html">ประวัติส่วนตัว</a></li>
+            <li><a href="education.html" class="active">ประวัติการศึกษา</a></li>
+            <li><a href="projects.html">ผลงาน/กิจกรรม</a></li>
+            <li><a href="contact.html">ช่องทางติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>ประวัติการศึกษา</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>มัธยมศึกษาตอนปลาย (ม.4 - ม.6)</h3>
+                <p>โรงเรียน: ...... | แผนการเรียน: ......</p>
+                <p>เกรดเฉลี่ยสะสม (GPAX): ......</p>
+            </div>
+            <div class="timeline-item">
+                <h3>มัธยมศึกษาตอนต้น (ม.1 - ม.3)</h3>
+                <p>โรงเรียน: ......</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
