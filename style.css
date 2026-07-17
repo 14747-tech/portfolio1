@@ -109,10 +109,3 @@ body {
 .hero-content {
     flex: 1;
 }
-
-/* จัดการและทำรูปภาพให้เป็นวงกลม */
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* จัดรูปให้อยู่ตรงกลางฝั่งขวา */
-}
