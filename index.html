@@ -3,29 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>แฟ้มสะสมผลงาน (Portfolio)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Nav Bar */
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            min-height: 80vh;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">MyPortfolio</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">หน้าแรก</a></li>
-            <li><a href="about.html">ประวัติส่วนตัว</a></li>
-            <li><a href="education.html">ประวัติการศึกษา</a></li>
-            <li><a href="projects.html">ผลงาน/กิจกรรม</a></li>
-            <li><a href="contact.html">ช่องทางติดต่อ</a></li>
+    <nav>
+        <ul>
+            <li><a href="#home">หน้าแรก</a></li>
+            <li><a href="#profile">ประวัติส่วนตัว</a></li>
+            <li><a href="#education">การศึกษา</a></li>
+            <li><a href="#awards">รางวัล</a></li>
+            <li><a href="#activities">กิจกรรม & ติดต่อ</a></li>
         </ul>
     </nav>
-    <header class="hero-section">
-        <div class="hero-conten">
-         <img scr="images/unnamed.jpg "width=200">
-            <h1>สวัสดีครับ ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน</h1>
-            <p>ฉันกำลังศึกษาอยู่ชั้น ม.6 และนี่คือพื้นที่รวบรวมเรื่องราวและผลงานของฉัน</p>
-            <a href="projects.html" class="btn">ดูผลงานของฉัน</a>
+
+    <section id="home">
+        <div class="card" style="text-align: center;">
+            <h1>ยินดีต้อนรับสู่ Portfolio ของฉัน</h1>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์รวบรวมผลงาน ประวัติ และกิจกรรมต่างๆ ของฉัน</p>
         </div>
-    </header>
+    </section>
+
+    <hr>
+
+    <section id="profile">
+        <h2>ประวัติส่วนตัว</h2>
+        <div class="card">
+            <p><strong>ชื่อ-นามสกุล:</strong> นาย/นางสาว สมชาย ใจดี</p>
+            <p><strong>ชื่อเล่น:</strong> อาร์ม</p>
+            <p><strong>วันเกิด:</strong> 1 มกราคม 2005</p>
+            <p><strong>คติประจำใจ:</strong> ความพยายามไม่เคยทำร้ายคนที่ตั้งใจ</p>
+            <p><strong>ทักษะความสามารถ:</strong> HTML, CSS, JavaScript, การถ่ายภาพ</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="education">
+        <h2>ประวัติการศึกษา</h2>
+        <div class="card">
+            <h3>ระดับมัธยมศึกษาตอนปลาย</h3>
+            <p>โรงเรียนวิทยาศาสตร์ ตัวอย่าง</p>
+            <p>แผนการเรียน: วิทย์ - คณิต</p>
+        </div>
+        <div class="card">
+            <h3>ระดับมัธยมศึกษาตอนต้น</h3>
+            <p>โรงเรียนวิทยาศาสตร์ ตัวอย่าง</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="awards">
+        <h2>รางวัลและผลงานที่ได้รับ</h2>
+        <div class="card">
+            <h3>รางวัลชนะเลิศ การประกวดแข่งขันเขียนโปรแกรม</h3>
+            <p>ได้รับเมื่อปี 2024 - จัดโดยสถาบันเทคโนโลยีตัวอย่าง</p>
+        </div>
+        <div class="card">
+            <h3>รางวัลรองชนะเลิศอันดับ 1 ตอบคำถามวิชาการ</h3>
+            <p>ได้รับเมื่อปี 2023 - งานสัปดาห์วิทยาศาสตร์</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="activities">
+        <h2>กิจกรรมและข้อมูลการติดต่อ</h2>
+        <div class="card">
+            <h3>กิจกรรมที่เคยเข้าร่วม</h3>
+            <ul>
+                <li>ประธานชมรมคอมพิวเตอร์ ประจำปี 2024</li>
+                <li>จิตอาสาพัฒนาชุมชนและสิ่งแวดล้อม</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3>ช่องทางการติดต่อ</h3>
+            <p><strong>Email:</strong> myemail@example.com</p>
+            <p><strong>Phone:</strong> 081-234-5678</p>
+            <p><strong>GitHub:</strong> github.com/yourusername</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
